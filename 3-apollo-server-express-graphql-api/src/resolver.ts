@@ -1,9 +1,7 @@
 import { IResolvers } from "graphql-tools";
 const resolvers: IResolvers = {
   Query: {
-    helloWorld(_: void, args: void): string {
-      return "Hello world!";
-    },
+    helloworld: () => "Hello world from Apollo Server 3",
   },
 };
 export default resolvers;
