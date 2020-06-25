@@ -2,9 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var resolvers = {
     Query: {
-        helloWorld: function (_, args) {
-            return "Hello world!";
-        },
+        helloWorld: function () { return "Hello world from Apollo Server 3"; },
     },
 };
 exports.default = resolvers;
