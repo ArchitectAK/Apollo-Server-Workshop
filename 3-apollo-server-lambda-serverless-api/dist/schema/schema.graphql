@@ -1,0 +1,7 @@
+type Query {
+  helloWorld: String!
+}
+
+type Mutation {
+  post(url: String!, description: String!): String!
+}
