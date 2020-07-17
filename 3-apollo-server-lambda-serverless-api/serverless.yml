@@ -1,0 +1,21 @@
+org: rea-group
+app: apollo-server-lambda
+service: apollo-lambda
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: ap-southeast-1
+iamRoleStatements:
+  Effect: "Allow"
+  Action: "*"
+  Resource: "*"
+functions:
+  graphql:
+    # this is formatted as <FILENAME>.<HANDLER>
+    handler: server.graphqlHandler
+    events:
+      - http:
+          path: graphql
+          method: get
+          cors: true
+          integration: lambda-proxy

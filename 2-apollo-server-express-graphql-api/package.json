@@ -2,7 +2,7 @@
   "name": "apollo-server-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
     "start": "node 'dist/server.js'",
     "build": "tsc -p . && ncp src/schema dist/schema",
