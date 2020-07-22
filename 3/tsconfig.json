@@ -5,6 +5,9 @@
     "lib": ["es6", "dom"],
     "moduleResolution": "node",
     "rootDir": "./",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
     "sourceMap": true,
     "allowJs": true,
     "noImplicitAny": true,
@@ -13,8 +16,10 @@
     "strictNullChecks": true,
     "noImplicitReturns": true,
     "preserveConstEnums": true,
+    "skipLibCheck": true,
     "suppressImplicitAnyIndexErrors": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "build", "webpack"],
   "types": ["typePatches"]

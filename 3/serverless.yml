@@ -35,7 +35,7 @@ package:
 
 functions:
   graphqlHandler:
-    handler: handler.hello
+    handler: handler.graphqlHandler
     events:
       - http:
           path: graphql

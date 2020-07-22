@@ -11,7 +11,7 @@ let links = [
 let idCount = links.length;
 const resolvers: IResolvers = {
   Query: {
-    helloWorld: () => "Hello world from Apollo Server",
+    helloWorld: () => "Hello world from Serverless Apollo Server",
   },
   Mutation: {
     post: (parent, args) => {

@@ -1,4 +1,5 @@
 import { Handler, Context, Callback } from "aws-lambda";
+import { server } from "./src/server";
 
 interface HelloResponse {
   statusCode: number;
@@ -15,5 +16,6 @@ const hello: Handler = (event: any, context: Context, callback: Callback) => {
 
   callback(undefined, response);
 };
+const graphqlHandler = server.createHandler();
 
-export { hello };
+export { hello, graphqlHandler };

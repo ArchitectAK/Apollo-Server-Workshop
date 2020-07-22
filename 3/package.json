@@ -2,21 +2,23 @@
   "name": "4",
   "version": "1.0.0",
   "description": "",
-  "main": "handler.js",
+  "main": "handler.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serverless offline start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.59",
-    "serverless-offline": "^6.4.0",
+    "serverless-offline": "^6.5.0",
     "serverless-plugin-typescript": "^1.1.9",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2"
   },
   "dependencies": {
-    "apollo-server-lambda": "^2.15.1",
-    "graphql-import-node": "0.0.4"
+    "apollo-server-lambda": "^2.16.0",
+    "graphql-import": "^1.0.2"
   }
 }
